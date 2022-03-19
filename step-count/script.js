@@ -1,8 +1,13 @@
-const rectTags = document.querySelectorAll('rect')
+const data = [550, 120, 731, 600]
 
-const data = [550, 120, 731]
+const todaySvg = document.querySelector('svg')
 
-rectTags.forEach((tag, i) => {
-  const width = data[i]
-  tag.setAttribute('width', width + 'px')
+data.forEach((d, i) => {
+  const rectTag = document.createElementNS('http://www.w3.org/2000/svg', 'rect')
+
+  rectTag.setAttribute('x', '0')
+  rectTag.setAttribute('y', i * 45)
+  rectTag.setAttribute('width', d)
+  rectTag.setAttribute('height', '40')
+  todaySvg.append(rectTag)
 })
