@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  --background-main: #edf4f7;
+  --background-side: #f4f8fa;
+  --primary-blue: #32444d;
+  --secondary-blue: #b3c3cc;
+  --primary-orange: #ff6719;
+  --secondary-orange: #ffaa80;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Merriweather;
   font-size: 16px;
   line-height: 1.5;
-
-  background-color: #fff;
-  color: #333;
-  margin: 40px auto;
+  background-color: var(--background-main);
+  color: var(--primary-blue);
   width: 620px;
 }
 
@@ -13,3 +22,12 @@ h1 {
   font-size: 36px;
   font-weight: 700;
 }
+
+/* 
+background main: #edf4f7
+background side: #f4f8fa
+background main: #32444d
+background main: #b3c3cc
+background main: #ff6719 
+background main: #ffaa80 
+*/
