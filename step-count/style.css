@@ -50,3 +50,9 @@ p {
 rect {
   fill: var(--primary-orange);
 }
+
+circle {
+  stroke: var(--primary-blue);
+  stroke-width: 10px;
+  fill: none;
+}
