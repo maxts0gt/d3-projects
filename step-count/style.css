@@ -47,11 +47,6 @@ p {
   margin: 0px 0 0 0;
 }
 
-/* 
-background main: #edf4f7
-background side: #f4f8fa
-background main: #32444d
-background main: #b3c3cc
-background main: #ff6719 
-background main: #ffaa80 
-*/
+rect {
+  fill: var(--primary-orange);
+}
