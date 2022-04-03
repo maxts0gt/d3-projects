@@ -54,7 +54,7 @@ rect {
 circle {
   stroke: var(--primary-blue);
   stroke-width: 10px;
-  fill: none;
+  fill: var(--secondary-orange);
 }
 
 text {
