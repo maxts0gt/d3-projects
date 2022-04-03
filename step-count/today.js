@@ -1,4 +1,4 @@
-const todaySvg = d3.select("svg");
+const todaySvg = d3.select("svg.today");
 
 const barScale = d3.scaleLinear().domain([0, 10000]).range([1, 112]);
 
