@@ -56,3 +56,9 @@ circle {
   stroke-width: 10px;
   fill: none;
 }
+
+text {
+  fill: var(--primary-blue);
+  text-anchor: middle;
+  font-size: 14px;
+}
