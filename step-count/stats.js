@@ -1,5 +1,10 @@
-d3.select("p.worst-day").text(d3.min(monthData) + " steps");
-d3.select("p.average-day").text(d3.mean(monthData) + " steps");
-d3.select("p.best-day").text(d3.max(monthData) + " steps");
-d3.select("p.total-month").text(d3.sum(monthData) + " steps");
-d3.select("p.total-day").text(d3.sum(monthData) + " steps");
+const statsFormat = d3.format(",.0f");
+
+d3.select("p.worst-day").text(statsFormat(d3.min(monthData)) + " steps");
+d3.select("p.average-day").text(statsFormat(d3.mean(monthData)) + " steps");
+d3.select("p.best-day").text(statsFormat(d3.max(monthData)) + " steps");
+d3.select("p.total-month").text(statsFormat(d3.sum(monthData)) + " steps");
+d3.select("p.total-day").text(statsFormat(d3.sum(monthData)) + " steps");
+d3.select("p.difference-day").text(
+  statsFormat(d3.max(monthData) - d3.min(monthData)) + " steps"
+);

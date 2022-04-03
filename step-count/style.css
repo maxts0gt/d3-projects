@@ -49,14 +49,18 @@ p {
 
 rect {
   fill: var(--primary-orange);
+  cursor: pointer;
   transition: fill 0.25s
 }
 
 
 circle {
-  /* stroke: var(--primary-blue); */
   stroke-width: 10px;
-  /* fill: var(--secondary-orange); */
+  cursor: pointer
+}
+
+circle:hover {
+  fill: var(--primary-orange)
 }
 
 text {
@@ -75,7 +79,7 @@ text.steps {
 }
 
 g:hover text.steps {
-  opacity: 1
+  opacity: 1;
 }
 
 rect.transparent {
@@ -88,6 +92,7 @@ circle.ring {
   stroke-width: 2px;
   opacity: 0.25
 }
+
 
 text.day {
   opacity: 1;

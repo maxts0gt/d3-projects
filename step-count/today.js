@@ -2,6 +2,8 @@ const todaySvg = d3.select("svg.today");
 
 const barScale = d3.scaleLinear().domain([0, 20000]).range([1, 112]);
 
+const hourFormat = d3.format("02");
+
 const todayGroups = todaySvg
   .selectAll("g")
   .data(todayData)
@@ -38,7 +40,7 @@ todayGroups
   .attr("y", 150)
   .attr("class", "hours")
   .text((d, i) => {
-    return i;
+    return hourFormat(i);
   });
 
 todayGroups
