@@ -54,13 +54,13 @@ rect {
 
 
 circle {
-  stroke: var(--primary-blue);
+  /* stroke: var(--primary-blue); */
   stroke-width: 10px;
-  fill: var(--secondary-orange);
+  /* fill: var(--secondary-orange); */
 }
 
 text {
-  fill: var(--primary-blue);
+  fill: var(--secondary-orange);
   text-anchor: middle;
   font-size: 14px;
 }
@@ -80,4 +80,24 @@ g:hover text.steps {
 
 rect.transparent {
   opacity: 0
+}
+
+circle.ring {
+  fill: none;
+  stroke: var(--secondary-blue);
+  stroke-width: 2px;
+  opacity: 0.25
+}
+
+text.day {
+  opacity: 1;
+  transition: opacity 0.25s
+}
+
+g:hover text.day {
+  opacity: 0
+}
+
+svg.month text {
+  fill: var(--primary-blue)
 }

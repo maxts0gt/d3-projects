@@ -30,6 +30,38 @@ monthGroups
     return radiusScale(d);
   });
 
+monthGroups
+  .append("circle")
+  .attr("cx", 0)
+  .attr("cy", 0)
+  .attr("r", radiusScale(15000))
+  .attr("class", "ring");
+
+monthGroups
+  .append("circle")
+  .attr("cx", 0)
+  .attr("cy", 0)
+  .attr("r", radiusScale(30000))
+  .attr("class", "ring");
+
+monthGroups
+  .append("text")
+  .attr("class", "day")
+  .attr("x", 0)
+  .attr("y", 70)
+  .text((d, i) => {
+    return i + 1;
+  });
+
+monthGroups
+  .append("text")
+  .attr("class", "steps")
+  .attr("x", 0)
+  .attr("y", 70)
+  .text((d, i) => {
+    return `${d} steps`;
+  });
+
 // monthSvg
 //   .selectAll("text")
 //   .data(todayData)
